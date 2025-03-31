@@ -1,5 +1,5 @@
 import { navigationItems } from "@/interfaces/navigationbar";
-import { User, Theater, Search} from "lucide-react";
+import { User, Theater, Search } from "lucide-react";
 
 const NavigationBar = () => {
   const navigationEntries: navigationItems = {
@@ -20,7 +20,11 @@ const NavigationBar = () => {
       <div className="flex space-x-6">
         {Object.entries(navigationEntries).map(([key, value]) => (
           <ul key={key}>
-            <li className="hover:text-blue-400 cursor-pointer">{value}</li>
+            <li className="relative cursor-pointer hover:text-blue-400">
+              <span className="after:content-[''] after:block after:w-0 after:h-1 after:bg-blue-400 after:transition-all after:duration-300 after:bottom-0 after:left-0 hover:after:w-full">
+                {value}
+              </span>
+            </li>
           </ul>
         ))}
       </div>
