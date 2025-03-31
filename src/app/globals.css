@@ -4,3 +4,21 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+
+body, html {
+  overflow: hidden; /* Prevents scrolling */
+  height: 100%;
+}
+
+body {
+  overflow-y: scroll; /* Allow vertical scrolling */
+}
+
+::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar for Webkit-based browsers */
+}
+
+html {
+  overflow: -moz-scrollbars-none; /* For Firefox */
+  scrollbar-width: none; /* Hides the scrollbar for Firefox */
+}
