@@ -4,10 +4,6 @@ import { posterProps } from "@/interfaces/posterProprs";
 const Posters: React.FC<posterProps> = ({ title, description, image }) => {
   return (
     <div className="flex justify-center items-center min-h-screen space-x-10 px-10">
-      <img
-        src={image.src}
-        className="h-96 w-[600px] object-cover rounded-b-md drop-shadow-xl"
-      />
       <div className="max-w-lg text-center">
         <h1 className="text-3xl font-bold text-white">
           {title}
@@ -19,6 +15,10 @@ const Posters: React.FC<posterProps> = ({ title, description, image }) => {
           <span className="text-white font-semibold cursor-pointer ">Click here!</span>
         </button>
       </div>
+      <img
+        src={image.src}
+        className="h-96 w-[600px] object-cover rounded-b-md drop-shadow-xl"
+      />
     </div>
   );
 };

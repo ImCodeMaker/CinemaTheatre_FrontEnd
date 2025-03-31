@@ -56,11 +56,6 @@ function BigImage() {
               className="w-[90dvw] h-[500px] object-cover rounded-sm drop-shadow-2xl"
               alt="Movie poster"
             />
-            <h1 className="absolute bottom-4 left-4 text-5xl font-bold text-white bg-black bg-opacity-50 p-2 rounded-xl">
-              {" "}
-              {/* Changed to rounded-xl */}
-              {data[currentIndex]?.title}
-            </h1>
           </div>
         )}
         <div className="relative flex justify-around items-center w-full px-10">
