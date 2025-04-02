@@ -57,7 +57,7 @@ function BigImage() {
               alt="Movie poster"
 
             />
-            <div className="absolute bottom-3 flex justify-center items-center left-6 h-10 w-32 bg-red-600 rounded-2xl hover:bg-red-500">
+            <div className="absolute bottom-3 flex justify-center items-center left-6 h-12 w-36 bg-red-500 rounded-3xl hover:bg-red-400">
               <span className="text-center font-bold text-lg text-white">Get tickets</span>
             </div>
           </div>

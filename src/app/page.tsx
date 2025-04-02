@@ -8,6 +8,7 @@ import CinemaImage from "@/assets/images/cinema_image.jpg";
 import CinemaVIP from "@/assets/images/cinemaVIP.jpg";
 import Cinena4DX from "@/assets/images/carribean4dx.jpg";
 import CinemaFood from "@/assets/images/food.jpg"
+import Footer from "@/features/footer";
 
 function HomePage() {
   return (
@@ -48,6 +49,7 @@ function HomePage() {
           image={CinemaFood}
         />
       </div>
+        <Footer/>
     </>
   );
 }
