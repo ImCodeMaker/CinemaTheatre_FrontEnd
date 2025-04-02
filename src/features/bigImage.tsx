@@ -55,7 +55,11 @@ function BigImage() {
               src={`https://image.tmdb.org/t/p/original${data[currentIndex].backdrop_path}`}
               className="w-[90dvw] h-[500px] object-cover rounded-sm drop-shadow-2xl"
               alt="Movie poster"
+
             />
+            <div className="absolute bottom-3 flex justify-center items-center left-6 h-10 w-32 bg-red-600 rounded-2xl hover:bg-red-500">
+              <span className="text-center font-bold text-lg text-white">Get tickets</span>
+            </div>
           </div>
         )}
         <div className="relative flex justify-around items-center w-full px-10">

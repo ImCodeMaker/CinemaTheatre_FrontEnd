@@ -6,12 +6,11 @@ export async function fetchMovieData(): Promise<movieData[]> {
       "https://api.themoviedb.org/3/movie/popular?api_key=48bd6b3e003c20e5afdd558c4d47fdb6"
     );
 
-    if (!response.ok) throw new Error("An error ocurred fetching the data!");
+    if (!response.ok) throw new Error("An error occurred fetching the data!");
 
     const data = await response.json();
     return data.results;
   } catch (error) {
     throw error;
-    return [];
   }
 }
