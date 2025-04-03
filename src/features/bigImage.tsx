@@ -51,14 +51,26 @@ function BigImage() {
       <div className="relative flex flex-col items-center text-center space-y-2 drop-shadow-2xl">
         {data[currentIndex]?.title && (
           <div className="flex justify-center mt-4 relative">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={`https://image.tmdb.org/t/p/original${data[currentIndex].backdrop_path}`}
               className="w-[90dvw] h-[500px] object-cover rounded-sm drop-shadow-2xl"
               alt="Movie poster"
 
             />
-            <div className="absolute bottom-3 flex justify-center items-center left-6 h-12 w-36 bg-red-500 rounded-3xl hover:bg-red-400">
-              <span className="text-center font-bold text-lg text-white">Get tickets</span>
+            <div className="absolute bottom-36 left-6 space-y-4">
+              <h1 className="text-white font-extrabold text-4xl md:text-5xl leading-tight drop-shadow-lg">
+                {data[currentIndex].title}
+              </h1>
+
+              <p className="text-white text-base md:text-lg max-w-xl bg-black/40 p-3 rounded-lg">
+                {data[currentIndex].overview}
+              </p>
+
+              <button className="flex items-center justify-center h-12 w-40 bg-red-600 rounded-full hover:bg-red-500 transition-all duration-300 shadow-md">
+                <span className="text-white font-semibold text-lg">Get Tickets</span>
+              </button>
+
             </div>
           </div>
         )}
